@@ -1,0 +1,29 @@
+~ ./keycli.sh
+     __
+    /o \_____
+    \__/-="="`
+Credential Manager
+      KeyCLI
+
+admin:
+  keycli.sh unlock <client-id>
+  keycli.sh show
+  keycli.sh purge
+  keycli.sh update <client-id> <client-email>
+
+~ ./keycli.sh unlock 50
+4d6c995dfea5cc61fadd9f7ab2df97af23f612b0
+
+~ ./keycli.sh purge
+Purged 81a718814bf3ccf084126d9351a4c07aa4be4c97 expired 2020-04-11 17:29:28
+
+~ ./keycli.sh dump
+----------------------------------------------------
+unlock_key: 9263c7128f1d5d4d9842039a5e627bfeb7e57e06
+client_id: 10
+request_origin: whmcs
+request_ip: 123.123.123.123
+expires_at: 2020-04-11 18:39:13
+
+~ ./keycli.sh update 300 newfoo@newbar.com
+Updated email for client id 300 foo@bar.com --> newfoo@newbar.com

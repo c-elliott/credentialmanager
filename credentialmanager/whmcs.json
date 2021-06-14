@@ -1,0 +1,30 @@
+{
+  "schema": "1.0",
+  "type": "whmcs-addons",
+  "name": "credentialmanager",
+  "license": "MIT",
+  "category": "security",
+  "description": {
+    "name": "Credential Manager",
+    "tagline": "encrypt your data",
+    "long": "Credential Manager provides strong encrypted storage for credentials, accessible by clients and admins.",
+    "features": [
+      "Refer to the github readme for more information"
+    ]
+  },
+  "logo": {
+    "filename": "logo.png"
+  },
+  "support": {
+    "homepage": "https://github.com/c-elliott/credentialmanager"
+  },
+  "authors": [
+    {
+      "name": "Chris Elliott",
+      "homepage": "https://github.com/c-elliott/credentialmanager"
+    }
+  ],
+  "keywords": [
+    "credentials, encryption, opensource"
+  ]
+}

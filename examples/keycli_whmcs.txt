@@ -1,0 +1,24 @@
+~ ./keycli.sh
+     __
+    /o \_____
+    \__/-="="`
+Credential Manager
+      KeyCLI
+
+whmcs:
+  keycli.sh unlock <client-id>
+  keycli.sh public <client-id> <client-email>
+  keycli.sh private <unlock-key>
+
+~ ./keycli.sh unlock 50
+This will send an email to the client, are you sure?: (y/n) y
+Unlock key sent to client@emailaddress.com
+
+~ ./keycli.sh public 50 client@emailaddress.com
+d774939a9eaeff832103adf0ee1c7de17c8c9b0ef184e0127444b194a66647041407a17ac5a9ae89da23e97752040e495860c08603eb9a8dfbd3d3e18fefc69b97c06937c37dcc7ebfc9894ec4cd50bd1cb9863b23850e4cf70eeae6c6fb064b4a3675bf0c147b4b6ff2e1e93d227fea~ 
+
+~ ./keycli.sh public 50 incorrect@emailaddress.com
+Error! Your current email address incorrect@emailaddress.com does not match your keypair client@emailaddress.com. Please contact support.
+
+~ ./keycli.sh private 2c353731963ce3694378255a6f2702d74d287d32
+be9a5924c671c93efe1da39ebfd13f06453fa3ba9eef74bf5fd557d2987914409a0c01566b05aa34cac0dc592fd8ba4eddf388b9335ced756ae6816c36b0e3a5c4a084c71df67e53e95d304f20e8d5b031598f1190240b1cc8268c87f081592525da5bd2b564fb788c9a7ad61317f85d1c7685afe87ae92666a8de0e8448008148ff31886e49088bdb42d9478df460e55f509b796d74fd4cd941e0e54fad4fac25ed38922e76642d89cd05e99c303207
