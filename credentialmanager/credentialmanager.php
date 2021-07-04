@@ -22,7 +22,7 @@ function credentialmanager_config()
             . ' for credentials, accessible by clients and admins.',
         'author' => 'Chris Elliott',
         'language' => 'english',
-        'version' => '1.0',
+        'version' => '1.1',
         'fields' => [
             'debug_client_id' => [
                 'FriendlyName' => 'Debug client ID',

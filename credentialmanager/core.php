@@ -498,15 +498,15 @@ class CredentialManager
         return $this->buildAlert('success', 'Deleted credential.');
     }
 
-    function requestUnlock($client_id, $post)
+    function requestUnlock($client_id, $data)
     {
-        if (!$this->checkCSRF($post['token'])) {
+        if (!$this->checkCSRF($data['token'])) {
             return $this->buildAlert('danger', 'Invalid CSRF token. Check if you have multiple windows open.');
         }
-        return $this->requestPrivateKey($client_id, $post['unlock_key']);
+        return $this->requestPrivateKey($client_id, $data['unlock_key']);
     }
 
-    function requestUnlockKey($client_id)
+    function requestUnlockKey($client_id, $data)
     {
         if (!$this->checkCSRF($data['token'])) {
             return $this->buildAlert('danger', 'Invalid CSRF token. Check if you have multiple windows open.');
