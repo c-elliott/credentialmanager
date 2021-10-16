@@ -34,7 +34,7 @@ Refer to the **examples** directory for screenshots of the module and major data
 - Three servers (1x, WHMCS, 1x Keyserver, 1x KeyCLI)
 - PHP 7.x with SQLite3, libsodium, curl_exec enabled
 - WHMCS 8.x with twenty-one theme
-- Mailserver ons system running Keyserver
+- Mailserver on system running Keyserver
 
 ## Installation
 
@@ -54,8 +54,8 @@ $settings = [
     'database_file'      => '/var/keyserver/keyserver.db'
 ];
 ```
-4. Make sure the database file will not be exposed to the internet, it should be outside documentroot.
-5. Add a cronjob to purge expired tokens, this should run at least every 5 minutes.
+3. Make sure the database file will not be exposed to the internet, it should be outside documentroot.
+4. Add a cronjob to purge expired tokens, this should run at least every 5 minutes.
 ```
 */5 * * * * php -q <webserver-root>/keyserver.php purge
 ```
